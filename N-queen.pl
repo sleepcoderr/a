@@ -1,4 +1,4 @@
-% Main predicate
+% Main predicate n_queen(4, Solution).
 n_queens(N, Solution) :-
     length(Solution, N),
     queens(Solution, N).
