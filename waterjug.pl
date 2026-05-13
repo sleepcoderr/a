@@ -36,7 +36,7 @@ rule(state(X,Y), state(X1,Y1)) :-
     X1 is X + Transfer,
     Y1 is Y - Transfer.
 
-% -------- Search (DFS) --------
+% -------- Search (DFS) -------- solve.
 
 solve :-
     initial(State),
