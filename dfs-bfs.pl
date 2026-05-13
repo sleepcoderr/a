@@ -16,7 +16,7 @@ dfs_util(Current, Goal, Visited, Path) :-
     \+ member(Next, Visited),
     dfs_util(Next, Goal, [Next|Visited], Path).
 
-% Breadth First Search
+% Breadth First Search dfs(a,g,path).
 bfs(Start, Goal, Path) :-
     bfs_util([[Start]], Goal, Result),
     reverse(Result, Path).
